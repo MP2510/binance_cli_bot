@@ -13,8 +13,7 @@ class BinanceFuturesClient:
         Initialize Binance Futures client.
         """
         self.logger = logger
-        self.client = Client(API_KEY, SECRET_KEY)
-        self.client.FUTURES_TESTNET_URL = BASE_URL
+        self.client = Client(API_KEY, SECRET_KEY, testnet=True)
         
 
     def place_market_order(self, symbol, side, qty):
@@ -89,4 +88,5 @@ class BinanceFuturesClient:
 
         except Exception as e:
             self.logger.error(f"Error: {e}")
+
             raise
