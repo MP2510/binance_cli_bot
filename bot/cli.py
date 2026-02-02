@@ -39,7 +39,6 @@ def cli(settings, logger):
         client = BinanceFuturesClient(
             settings["BINANCE_API_KEY"],
             settings["BINANCE_SECRET_KEY"],
-            settings["BINANCE_BASE_URL"],
             logger
         )
 
@@ -67,4 +66,5 @@ def cli(settings, logger):
     except Exception as e:
         logger.exception("Order placement failed.")
         print("\nOrder Failed.")
+
         print(f"Due to: {str(e)}")
