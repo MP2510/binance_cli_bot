@@ -71,7 +71,8 @@ Add creds in .env file.
 
 BINANCE_API_KEY=your_testnet_api_key
 BINANCE_API_SECRET=your_testnet_secret_key
-BINANCE_BASE_URL=https://testnet.binancefuture.com
+
+Fro api_key visit this link: https://testnet.binance.vision/
 
 ## How to Run
 All commands are executed from the project root.
@@ -94,5 +95,6 @@ python main.py --symbol BTCUSDT --s SELL --ot LIMIT --qty 0.01 --p 42000
 - No leverage or margin configuration is handled.
 
 - No retry logic is implemented (intentional for simplicity).
+
 
 - Quantity and price precision rules are enforced by Binance API.
