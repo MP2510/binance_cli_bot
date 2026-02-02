@@ -25,7 +25,7 @@ Built with clean architecture, input validation, logging, and proper error handl
 ---
 
 ## 📁 Project Structure
-
+```
 binance_cli_bot/
 │
 ├── bot/
@@ -43,7 +43,7 @@ binance_cli_bot/
 ├── main.py # Application entry point
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Setup Steps
@@ -98,3 +98,4 @@ python main.py --symbol BTCUSDT --s SELL --ot LIMIT --qty 0.01 --p 42000
 
 
 - Quantity and price precision rules are enforced by Binance API.
+
