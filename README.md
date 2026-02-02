@@ -70,6 +70,7 @@ pip install -r requirements.txt
 Add creds in .env file. 
 
 BINANCE_API_KEY=your_testnet_api_key
+
 BINANCE_API_SECRET=your_testnet_secret_key
 
 Fro api_key visit this link: https://testnet.binance.vision/
@@ -98,5 +99,6 @@ python main.py --sym BTCUSDT --s SELL --ot LIMIT --qty 0.01 --p 42000
 
 
 - Quantity and price precision rules are enforced by Binance API.
+
 
 
